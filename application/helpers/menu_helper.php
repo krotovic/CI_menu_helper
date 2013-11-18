@@ -4,7 +4,7 @@ if(! function_exists('create_menu')){
 	
 	function create_menu($menu){
 			$nav = '';
-			$count=1;
+			
 			foreach ($menu as $key => $value) {
 				if(is_array($value)){
 					$nav .= '<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">'.$key.' <b class="caret"></b></a>'.PHP_EOL;
