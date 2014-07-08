@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Ci menu helper by krotovic</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Ci menu helper</h1>
+        <p>CodeIgniter Menu helper for Twitter Bootstrap and Foundation frameworks</p>
+
+        <p class="view"><a href="https://github.com/krotovic/CI_menu_helper">View the Project on GitHub <small>krotovic/CI_menu_helper</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/krotovic/CI_menu_helper/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/krotovic/CI_menu_helper/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/krotovic/CI_menu_helper">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a name="ci_menu_helper" class="anchor" href="#ci_menu_helper"><span class="octicon octicon-link"></span></a>CI_menu_helper</h1>
+
+<p>CodeIgniter Menu helper for Twitter Bootstrap</p>
+
+<h1>
+<a name="instalation" class="anchor" href="#instalation"><span class="octicon octicon-link"></span></a>Instalation</h1>
+
+<p>Just add file menu_helper.php to your CIroot/application/helpers/menu_helper.php<br><b>Warning</b> This helper uses another one to create class="active" at &lt;li&gt; tag if the link is active site. 
+This helper is <b>included</b> within this file.</p>
+
+<h1>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h1>
+
+<p>In your view type &lt;?= create_menu($menu); ?&gt;</p>
+
+<p>variable $menu initialize in your controller with array like this:</p>
+
+<p>$menu = array('controller/method'=&gt;'Item1','submenu'=&gt;array('controller/method'=&gt;'Sub-Item1'),'controller/method'=&gt;'Item2');</p>
+
+<p>This menu code will be like this:</p>
+
+<ul>
+<li><a href="&lt;?=%20site_url();%20?&gt;controller/method">Item1</a></li>
+<li>
+<a href="#">submenu</a>
+    <ul>
+<li><a href="&lt;?=%20site_url();%20?&gt;controller/method">Sub-Item1</a></li>
+    </ul>
+</li>
+<li><a href="&lt;?=%20site_url();%20?&gt;controller/method">Item2</a></li>
+</ul>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/krotovic">krotovic</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
